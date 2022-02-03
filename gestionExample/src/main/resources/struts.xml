@@ -5,7 +5,11 @@ Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
 	<constant name="struts.dev" value="true"></constant>
 	<package name="default" extends="struts-default">
 		<action name="index">
-			<result>/login.jsp</result>
+			<result>/index.jsp</result>
+		</action>
+		
+		<action name="hello" class="fr.formation.inti.action.HelloStrutsAction" method="execute"> <!--Il est possible de mettre plusieurs résultats -->
+			<result name="success">/helloStruts.jsp</result>
 		</action>
 		
 
