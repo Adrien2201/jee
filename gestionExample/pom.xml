@@ -82,6 +82,22 @@
 			<version>2.5.29</version>
 		</dependency>
 
+		<!-- Spring Core -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+			<version>4.3.3.RELEASE</version>
+		</dependency>
+
+		<!-- Spring Context -->
+		<!-- http://mvnrepository.com/artifact/org.springframework/spring-context -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>4.3.3.RELEASE</version>
+		</dependency>
+
+
 	</dependencies>
 	<build>
 		<finalName>gestionExample</finalName>
