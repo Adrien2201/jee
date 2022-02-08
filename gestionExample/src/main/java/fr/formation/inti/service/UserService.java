@@ -12,17 +12,12 @@ public class UserService implements IUserService{
 	}
 
 	public User findByLoginAndPassword(String login, String password) {
-		dao.beginTransaction();
-		User user = dao.findByLoginAndPassword(login, password);
-		dao.commitTransaction();
-		return user;
+
+		return dao.findByLoginAndPassword(login, password);
 	}
 
 	public Integer ajouterUser(User user) {
-		dao.beginTransaction();
-		Integer id = dao.save(user);
-		dao.commitTransaction();
-		return id;
+		return dao.save(user);
 	}
 	
 	public static void main(String[] args) {
